@@ -2494,5 +2494,9 @@
   window.setTimeout(() => {
     counts.push(["yellow", 6]);
     paint(counts);
+    window.setTimeout(() => {
+      counts.push(["blue", 7]);
+      paint(counts);
+    }, 1e3);
   }, 1e3);
 })();
